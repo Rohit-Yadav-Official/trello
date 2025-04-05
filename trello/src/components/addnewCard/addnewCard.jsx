@@ -4,7 +4,7 @@ import "./addnewCard.css";
 const AddNewCard = () => {
   return (
     <div className="add-new-card">
-      + Add new card
+      +Add new card
     </div>
   );
 };
