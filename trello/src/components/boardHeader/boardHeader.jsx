@@ -14,7 +14,7 @@ const members = [
   { id: "user-7", name: "User 7", avatar: "https://i.pravatar.cc/30?img=7" },
   { id: "user-8", name: "User 8", avatar: "https://i.pravatar.cc/30?img=8" },
   { id: "user-9", name: "User 9", avatar: "https://i.pravatar.cc/30?img=9" },
-  { id: "user-10", name: "User 10", avatar: "https://i.pravatar.cc/30?img=10"}
+  { id: "user-10", name: "User 10", avatar: "https://i.pravatar.cc/30?img=10"} ,
 ];
 
 const BoardHeader = () => {
