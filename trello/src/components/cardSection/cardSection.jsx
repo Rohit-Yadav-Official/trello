@@ -2,33 +2,58 @@ import React from "react";
 import CardList from "../cardList/cardList";
 
 // 🧠 Restructured data: each column has a title and an array of cards
-const data = [
-  {
-    title: "Design",
-    cards: [
+const data = 
+{
+  "board": {
+    "id": "brackets-board",
+    "title": "Brackets",
+    "isPublic": true,
+    "lists": [
       {
-        image: null,
-        title: "Home business advertising ideas",
-        description: "Successful businesses know the importance of building and maintaining…",
-        avatars: [
-          "https://randomuser.me/api/portraits/women/44.jpg",
-          "https://randomuser.me/api/portraits/men/45.jpg",
-          "https://randomuser.me/api/portraits/women/46.jpg",
-        ],
-        stats: { comments: 76, hearts: 32, likes: 66 },
-        color :["blue","red","green","pink"]
-      },
-      {
-        image: "https://s3-alpha-sig.figma.com/img/fd65/9bd7/8f490313a71e34da148bea8e49e4a006?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=WUatuz4fcnqzhGuBgaZDP-AqG15Hef2jHpkZcT31BhSSFNHJo8G5QnPqdBzS3zBYpjd7y0jnacJQh-hJAZArjS3JyvLVL8MNj9Fb2MrW7NAgdPcVTWPjAHj3V8O6STaeQSrajSrijpJbuyghnxqrompmUqQWTIyN7mGzxFjFtO45ui6DOzw3AlnqUn~l4MI~v3RfAhPK5qTWmZWA2AgQHxOqW6F7PfCOwEhhYWTrkHf4cW0z0276B6Qelgoq~YOd~WWvK-ub8XX8LA42D~8ppnFHvvtmYKNSRedxsauCbvn5AuyufEUFAtOQnfLm9ZUFaz-u5M~MljjH7ikGMQkWiA__",
-        title: "Unmatched toner cartridge quality 20 less than oem price",
-        description: "Why read motivational sayings? For motivation! You might need a bit, if you can use last year’s list of goals this year because it’s as good as new.",
-        avatars: [
-          "https://randomuser.me/api/portraits/women/44.jpg",
-          "https://randomuser.me/api/portraits/men/45.jpg",
-          "https://randomuser.me/api/portraits/women/46.jpg",
-        ],
-        stats: { comments: 76, hearts: 32, likes: 66 },
-        color :["blue","green",]
+        "id": "list-1",
+        "title": "Design",
+        "cards": [
+          {
+            "id": "card-1",
+            "title": "Old fashioned recipe for preventing allergies and chemical sensitivities",
+            "labels": [{ "color": "yellow", "id": "label-1" }],
+            "comments": 34,
+            "votes": 19,
+            "attachments": 34,
+            "members": [{ "id": "user-1", "avatar": "https://i.pravatar.cc/30?img=1" }]
+          },
+          {
+            "id": "card-2",
+            "title": "Home business advertising ideas",
+            "description": "Successful businesses know the importance of building and maintaining good working",
+            "labels": [
+              { "color": "blue", "id": "label-2" }, 
+              { "color": "red", "id": "label-3" }, 
+              { "color": "purple", "id": "label-4" }
+            ],
+            "comments": 25,
+            "votes": 6,
+            "attachments": 43,
+            "members": [
+              { "id": "user-2", "avatar": "https://i.pravatar.cc/30?img=2" },
+              { "id": "user-3", "avatar": "https://i.pravatar.cc/30?img=3" }
+            ]
+          },
+          {
+            "id": "card-3",
+            "title": "Cosmetic surgery abroad making the right choice",
+            "labels": [{ "color": "blue", "id": "label-2" }],
+            "comments": 14,
+            "votes": 16,
+            "attachments": 23,
+            "members": [
+              { "id": "user-1", "avatar": "https://i.pravatar.cc/30?img=1" },
+              { "id": "user-2", "avatar": "https://i.pravatar.cc/30?img=2" },
+              { "id": "user-3", "avatar": "https://i.pravatar.cc/30?img=3" }
+            ],
+            "coverImage": "https://picsum.photos/id/237/200/150"
+          }
+        ]
       },
       {
         "id": "list-2",
@@ -241,9 +266,37 @@ const data = [
         ]
       }
     ],
-   
+    "members": [
+      { "id": "user-1", "name": "User 1", "avatar": "https://i.pravatar.cc/30?img=1" },
+      { "id": "user-2", "name": "User 2", "avatar": "https://i.pravatar.cc/30?img=2" },
+      { "id": "user-3", "name": "User 3", "avatar": "https://i.pravatar.cc/30?img=3" },
+      { "id": "user-4", "name": "User 4", "avatar": "https://i.pravatar.cc/30?img=4" },
+      { "id": "user-5", "name": "User 5", "avatar": "https://i.pravatar.cc/30?img=5" },
+      { "id": "user-6", "name": "User 6", "avatar": "https://i.pravatar.cc/30?img=6" },
+      { "id": "user-7", "name": "User 7", "avatar": "https://i.pravatar.cc/30?img=7" },
+      { "id": "user-8", "name": "User 8", "avatar": "https://i.pravatar.cc/30?img=8" },
+      { "id": "user-9", "name": "User 9", "avatar": "https://i.pravatar.cc/30?img=9" },
+      { "id": "user-10", "name": "User 10", "avatar": "https://i.pravatar.cc/30?img=10" },
+      { "id": "user-11", "name": "User 11", "avatar": "https://i.pravatar.cc/30?img=11" },
+      { "id": "user-12", "name": "User 12", "avatar": "https://i.pravatar.cc/30?img=12" },
+      { "id": "user-13", "name": "User 13", "avatar": "https://i.pravatar.cc/30?img=13" },
+      { "id": "user-14", "name": "User 14", "avatar": "https://i.pravatar.cc/30?img=14" },
+      { "id": "user-15", "name": "User 15", "avatar": "https://i.pravatar.cc/30?img=15" },
+      { "id": "user-16", "name": "User 16", "avatar": "https://i.pravatar.cc/30?img=16" },
+      { "id": "user-17", "name": "User 17", "avatar": "https://i.pravatar.cc/30?img=17" },
+      { "id": "user-18", "name": "User 18", "avatar": "https://i.pravatar.cc/30?img=18" }
+    ],
+    "labelColors": {
+      "yellow": "#f2d600",
+      "red": "#eb5a46",
+      "purple": "#c377e0",
+      "blue": "#0079bf",
+      "green": "#61bd4f",
+      "orange": "#ff9f1a"
+    }
   }
-];
+};
+
 const CardSection = () => {
 //   const [columns, setColumns] = useState([]);
 
