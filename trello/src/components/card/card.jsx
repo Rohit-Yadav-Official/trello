@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.css";
+import "./card.css";
 import { FaHeart, FaRegComment, FaRegHeart } from "react-icons/fa";
 
 const Card = ({ image, title, description, avatars, stats ,color}) => {
