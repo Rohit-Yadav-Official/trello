@@ -1,0 +1,17 @@
+.add-new-card {
+    border: 2px dashed #a6a6a6; /* light blue */
+    border-radius: 10px;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.2s ease;
+  }
+  
+  .add-new-card:hover {
+    background-color: #f5faff;
+  }
+  

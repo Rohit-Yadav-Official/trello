@@ -1,0 +1,136 @@
+.card {
+    width: 362px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    overflow: hidden;
+    background: #F4F4F4;
+    padding-bottom: 10px;
+    min-height: 100px;
+  }
+  
+  .card-image {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+  }
+  
+  .tag {
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+  }
+  
+  .blue {
+    background-color: #4a90e2;
+  }
+  .red {
+    background-color: #e24a4a;
+  }
+  .pink {
+    background-color: pink;
+  }
+
+  
+  .green {
+    background-color: green;
+  }
+  
+  .card-content {
+    padding: 10px 15px;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .card-title, .card-description {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis; /* optional: add "..." if too long */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* limit lines, remove if you want full text */
+  }
+  
+  .card-title {
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  
+  .avatars {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: -5px;
+    border: 2px solid white;
+  } */
+  
+  .add-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .icons span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+
+
+    .card {
+      width: 288px;
+      
+    }
+
+
+  }
