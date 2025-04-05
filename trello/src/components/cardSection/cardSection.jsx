@@ -243,7 +243,7 @@ const data = [
     ],
    
   }
-}
+];
 const CardSection = () => {
 //   const [columns, setColumns] = useState([]);
 
