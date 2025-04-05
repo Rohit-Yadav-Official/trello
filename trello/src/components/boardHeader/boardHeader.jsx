@@ -2,16 +2,26 @@ import React from "react";
 import "./boardHeader.css";
 import { FaHdd } from "react-icons/fa";
 import RectangleIcon from "../../assets/headerIcon/Rectangle.png";
+import globeIcon from "../../assets/headerIcon/globe-2-outline.png";
 
-const userAvatars = [
-  "https://randomuser.me/api/portraits/women/1.jpg",
-  "https://randomuser.me/api/portraits/men/2.jpg",
-  "https://randomuser.me/api/portraits/women/3.jpg",
-  "https://randomuser.me/api/portraits/men/4.jpg",
-  "https://randomuser.me/api/portraits/women/5.jpg",
+const members = [
+  { id: "user-1", name: "User 1", avatar: "https://i.pravatar.cc/30?img=1" },
+  { id: "user-2", name: "User 2", avatar: "https://i.pravatar.cc/30?img=2" },
+  { id: "user-3", name: "User 3", avatar: "https://i.pravatar.cc/30?img=3" },
+  { id: "user-4", name: "User 4", avatar: "https://i.pravatar.cc/30?img=4" },
+  { id: "user-5", name: "User 5", avatar: "https://i.pravatar.cc/30?img=5" },
+  { id: "user-6", name: "User 6", avatar: "https://i.pravatar.cc/30?img=6" },
+  { id: "user-7", name: "User 7", avatar: "https://i.pravatar.cc/30?img=7" },
+  { id: "user-8", name: "User 8", avatar: "https://i.pravatar.cc/30?img=8" },
+  { id: "user-9", name: "User 9", avatar: "https://i.pravatar.cc/30?img=9" },
+  { id: "user-10", name: "User 10", avatar: "https://i.pravatar.cc/30?img=10"} ,
 ];
 
-const boardHeader = () => {
+const BoardHeader = () => {
+  const maxVisible = 6;
+  const visibleMembers = members.slice(0, maxVisible);
+  const remainingCount = members.length - maxVisible;
+
   return (
     <header className="brackets-header">
       {/* Left Side: Title & Icons */}
@@ -20,21 +30,30 @@ const boardHeader = () => {
         <div className="icons">
           <span className="icon">♡</span>
           <img src={RectangleIcon} alt="Separator" className="rectangle" />
-          <span className="icon disabled">🔗 Public</span>
+          <img src={globeIcon} alt="Separator" className="rectangle" />
+          <span className="icon disabled">Public</span>
           <img src={RectangleIcon} alt="Separator" className="rectangle" />
           <FaHdd className="storage-icon" />
-
-
         </div>
       </div>
 
       {/* Right Side: User Avatars & Menu */}
       <div className="right-section">
         <div className="avatar-group">
-          {userAvatars.map((avatar, index) => (
-            <img key={index} src={avatar} alt={`User ${index}`} className="avatar" />
+          {visibleMembers.map((user, index) => (
+            <img
+              key={index}
+              src={user.avatar}
+              alt={user.name}
+              className="avatar"
+              
+            />
           ))}
-          <div className="more-users">+44</div>
+          {remainingCount > 0 && (
+            <div className="more-users" >
+              +{remainingCount}
+            </div>
+          )}
         </div>
         <span className="menu-text">Menu</span>
       </div>
@@ -42,4 +61,4 @@ const boardHeader = () => {
   );
 };
 
-export default boardHeader;
+export default BoardHeader;
