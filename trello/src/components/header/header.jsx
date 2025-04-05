@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Header.css";
+import "./header.css";
 import { FaSearch } from "react-icons/fa";
 import { FaExclamationCircle } from "react-icons/fa";
 import { FaBell } from "react-icons/fa";
