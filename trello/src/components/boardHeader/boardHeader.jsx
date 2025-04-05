@@ -3,6 +3,8 @@ import "./boardHeader.css";
 import { FaHdd } from "react-icons/fa";
 import RectangleIcon from "../../assets/headerIcon/Rectangle.png";
 import globeIcon from "../../assets/headerIcon/globe-2-outline.png";
+import heartIcon from "../../assets/headerIcon/Heart.png";
+import hard from "../../assets/headerIcon/Hard.png";
 
 const members = [
   { id: "user-1", name: "User 1", avatar: "https://i.pravatar.cc/30?img=1" },
@@ -28,12 +30,12 @@ const BoardHeader = () => {
       <div className="left-section">
         <h2 className="title">Brackets</h2>
         <div className="icons">
-          <span className="icon">♡</span>
+        <img src={heartIcon} alt="Separator" className="rectangle" />
           <img src={RectangleIcon} alt="Separator" className="rectangle" />
           <img src={globeIcon} alt="Separator" className="rectangle" />
           <span className="icon disabled">Public</span>
-          <img src={RectangleIcon} alt="Separator" className="rectangle" />
-          <FaHdd className="storage-icon" />
+
+          <img src={hard} alt="Separator" className="rectangle" />
         </div>
       </div>
 
